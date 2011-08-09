@@ -13,9 +13,10 @@ import types
 import warnings
 
 
-class Loader(metaclass=abc.ABCMeta):
-
+class Loader():
     """Abstract base class for import loaders."""
+
+    __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
     def load_module(self, fullname):
@@ -24,9 +25,10 @@ class Loader(metaclass=abc.ABCMeta):
         raise NotImplementedError
 
 
-class Finder(metaclass=abc.ABCMeta):
-
+class Finder():
     """Abstract base class for import finders."""
+
+    __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
     def find_module(self, fullname, path=None):
