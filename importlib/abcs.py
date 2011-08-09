@@ -1,15 +1,10 @@
 """Abstract base classes related to import."""
-from . import _bootstrap
-from . import machinery
-from . import util
+from importlib import _bootstrap
+from importlib import machinery
 import abc
 import imp
-import io
 import marshal
-import os.path
 import sys
-import tokenize
-import types
 import warnings
 
 

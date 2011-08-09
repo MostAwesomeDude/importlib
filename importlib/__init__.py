@@ -20,11 +20,9 @@ References on import:
 """
 __all__ = ['__import__', 'import_module']
 
-from . import _bootstrap
+from importlib import _bootstrap
 
 import os
-import re
-import tokenize
 
 # Bootstrap help #####################################################
 
@@ -102,7 +100,7 @@ marshal._r_long = _r_long
 
 # Public API #########################################################
 
-from ._bootstrap import __import__
+from importlib._bootstrap import __import__
 
 
 def import_module(name, package=None):
