@@ -6,7 +6,7 @@ builtins.__import__ instead of importlib.__import__.
 """
 from importlib.test.import_ import util
 import os.path
-from test.support import run_unittest
+from test.test_support import run_unittest
 import sys
 import unittest
 
