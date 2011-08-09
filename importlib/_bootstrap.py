@@ -323,7 +323,7 @@ class _LoaderBasics:
         return data[8:]
 
     @module_for_loader
-    def _load_module(self, module, *, sourceless=False):
+    def _load_module(self, module, sourceless=False, *args):
         """Helper for load_module able to handle either source or sourceless
         loading."""
         name = module.__name__
