@@ -14,3 +14,10 @@ Todo
 * Unit tests are completely broken.
 * A switch to zope.interface instead of ABCs could remove the 2.7 dependency
   and make the codebase 2.5-compatible.
+* A setup.py should be included.
+
+Credits
+=======
+
+Justin Noah did the initial heavy lifting. Corbin Simpson decided to put it on
+github.
