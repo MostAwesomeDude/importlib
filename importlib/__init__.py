@@ -80,6 +80,10 @@ except ImportError:
             raise ImportError('posix, nt, or os2 module required for importlib')
 _bootstrap._os = _os
 import imp, sys, marshal, errno, _io
+
+# XXX monkey-patch imp to fail PEP 3147.
+imp.cache_from_source = lambda path: None
+
 _bootstrap.imp = imp
 _bootstrap.sys = sys
 _bootstrap.marshal = marshal
